@@ -1,0 +1,29 @@
+<section class="alt-section">
+
+  <h2 id="projects">Projects</h2>
+
+  <h3> Latest Work. More Projects >></h3>
+
+  <div class="thumb-container">
+
+    {% for project in site.data.settings.projects %}
+
+    <a href="" class="thumb-unit" style="background-image: url(/assets/img/projects/{{project.folder}}/thumb.jpg);">
+      
+      <div class="thumb-overlay" >
+
+        <strong>{{ project.name }}</strong>
+       
+        <p>{{ project.description }}</p>
+
+        <div class="zoom-icon"></div>
+
+      </div>
+
+    </a> 
+
+    {% endfor %}
+
+  </div>
+
+</section>

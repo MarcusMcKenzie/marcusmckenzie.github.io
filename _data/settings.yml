@@ -1,0 +1,58 @@
+#Site Settings
+title: Marcus McKenzie
+description: Roboticist // Engineer // Student
+email: marcustmckenzie@gmail.com
+author: Marcus McKenzie
+url: marcusmckenzie.info
+
+git_link: https://github.com/MarcusMcKenzie
+cv_link: 
+linked_link: https://www.linkedin.com/in/marcus-mckenzie-/
+cl_url: 
+
+
+# Collections
+collections_dir: collections
+collections:
+  portfolio:
+    output: true
+  posts:
+    output: true
+  notes:
+    output: true
+
+
+# Syntax Highlighter
+highlighter: rouge
+
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: marcustmckenzie@gmail.com
+  facebook:
+  flickr:
+  github: https://github.com/MarcusMcKenzie
+  instagram:
+  linkedin: https://www.linkedin.com/in/marcus-mckenzie-/
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  twitter:
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
+
+
+
+
+projects: 
+- {name: BAVI, folder: 'bavi', description: Computer Vision Based Archery}
+- {name: Self-Driving Car, folder: 'car', description: Intersection Decision-Making }
+- {name: HSR, folder: 'hsr', description: Human Support Robot}
+
+#- {name: Robotic Arm, folder: 'arm'}
+  
+social:
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/marcus-mckenzie-/'}
+- {icon: 'mail-alt', link: 'mailto:marcustmckenzie@gmail.com'}
+- {icon: 'github-circled', link: 'https://github.com/MarcusMcKenzie'}

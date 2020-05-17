@@ -1,0 +1,15 @@
+<footer>
+
+  <div class="social-links">
+
+    {% for social in site.data.settings.social %}
+   
+    <a href="{{ social.link }}" class="icon-{{ social.icon }}"></a>
+    
+    {% endfor %}
+    
+  </div>
+
+  <p>Copyright © Marcus McKenzie 2020</p>
+
+</footer>
