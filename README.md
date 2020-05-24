@@ -5,7 +5,7 @@ My personal website and way to learn new web development techniques.
 Currently using the Jekyll framework.
 
 
-#### Setup Instructions
+## Setup Instructions
 
 Install Gem and Ruby for compilation
 
