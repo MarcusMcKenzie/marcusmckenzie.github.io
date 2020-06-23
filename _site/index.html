@@ -165,64 +165,7 @@
 
 </experience>
 
-<contact>
 
-  <?php
-  $name = $_POST['name'];
-  $visitor_email = $_POST['email'];
-  $message = $_POST['message'];
-
-  $email_from = 'marcustmckenzie.info';
-
-  $email_subject = "New Form Submission";
-
-  $email_body = "User Name: $name.\n". 
-                  "User Email: $visitor_email.\n". 
-                    "User Message: $message.\n";
-
-
-  $to = "marcustmckenzie@gmail.com";
-
-  $headers = "From: $email_from \r\n";
-
-  $headers .= "Reply-to: $visitor_email \r\n";
-
-  mail($to,$email_subject, $email_body, $headers);
-
-  include 'contact.html'
-  #header("Location: contact.html")
-
-?>
-  <h3>Contact</h3>
-    
-  <div class="contact-title">
-
-    <h1>Contact</h1>
-    <h2>Feel free to Say Hi!</h2>
-      
-  </div>
-
-
-  <div class="contact-form">
-
-    <form id="contact-form" method="post" action="contact-form-handler.php">
-
-      <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-      <br>
-      <input name="email" type="email" class="form-control" placeholder="Your Email" required>
-      <br>
-
-        <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
-        <br>
-
-        <input type="submit" class="form-control submit" value="SEND MESSAGE">
-
-    </form>
-
-  </div>
-
-
-</contact>
 
 <footer>
 

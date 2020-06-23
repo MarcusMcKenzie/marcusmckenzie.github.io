@@ -20,7 +20,7 @@
 
   mail($to,$email_subject, $email_body, $headers);
 
-  include 'contact.html'
-  #header("Location: contact.html")
+  #include 'contact.html'
+  header("Location: contact.html")
 
 ?>

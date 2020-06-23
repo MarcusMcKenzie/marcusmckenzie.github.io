@@ -1,0 +1,48 @@
+<! DOCTYPE html>
+
+<contact>
+
+  <head>
+
+    <meta charset="=utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+  </head>
+
+  
+
+  <body>
+          
+    <div class="contact-title">
+
+      <h1>Contact</h1>
+      <h2>Feel free to Say Hi!</h2>
+        
+    </div>
+
+
+    <div class="contact-form">
+
+      <form id="contact-form" method="post" action="https://formspree.io/marcustmckenzie@gmail.com">
+
+        <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+        <br>
+        <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+        <br>
+
+          <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+          <br>
+
+          <input type="submit" class="form-control submit" value="SEND MESSAGE">
+
+      </form>
+
+    </div>
+
+
+    {% include _includes/footer.html %}
+
+  </body>
+
+</contact>
