@@ -1,15 +1,33 @@
+<script>
+  // Set to the same value as the web property used on the site
+  var gaProperty = 'UA-XXXX-Y';
+   
+  // Disable tracking if the opt-out cookie exists.
+  var disableStr = 'ga-disable-' + gaProperty;
+  if (document.cookie.indexOf(disableStr + '=true') > -1) {
+    window[disableStr] = true;
+  }
+   
+  // Opt-out function
+  function gaOptout() {
+    document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    window[disableStr] = true;
+  }
+</script>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Marcus McKenzie</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon3.ico">  
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon3.ico">  
 
-<body>
+</head>
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script type ="text/javascript">
@@ -30,12 +48,11 @@
 
 
 
-<header id = top> 
 
-    <nav>
+<nav>
     
-        <a class="home" href="#top">
-            <div class="logo"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <a class="home" href="/">
+        <div class="logo"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -67,206 +84,59 @@
      style="fill:rgb(13, 12, 26)" />
 </svg>
 </div> 
-        </a>
+    </a>
+
+    <ul class="nav-links">
     
-        <ul class="nav-links">
-        
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    
-        <div class= "burger">
-    
-            <div class= "line1"></div>
-            <div class= "line2"></div>
-            <div class= "line3"></div>
-    
-        </div>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#skills">Skills</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
 
-        
-    
-    </nav> 
-    
+    <div class= "burger">
+
+        <div class= "line1"></div>
+        <div class= "line2"></div>
+        <div class= "line3"></div>
+
+    </div>
 
 
-    <h1 id="header"><br>Marcus</br>McKenzie</h1>
-
-    <p class="kicker">Roboticist // Engineer // Student</p>
-
-
-</header>
-
-<script src="app.js"></script>
-
-<section>
-
-  <h2 id="about">About Me</h2>
-
-  <!--href on deep learning, signal processing and artificial perception to create hyperlink to other sites. -->
-  
-  <div class='blurb'>
-    <p><strong>Engineer with a passion for developing robots.</strong></p>
-    <p> Wide range of hands-on experience from Deep Learing to Signal Processing.</p>
-    <p>Greatly interested in Artificial Perception.</p>   
-  </div>
-
-
-</section>
+</nav> 
 
 
 
-<skills>
-
-
-  <h2 id="skills"> Skills </h2>
-    
-
-
-  <div class="content"></div>
-
-
-</skills>
-
-
-<script src="skill-pentagon.js"></script>
-
-<section class="alt-section">
-
-  <h2 id="projects">Projects</h2>
-
-  <h3>Checkout my latest endeavors on Github!</h3>
-
-  <div class="link">
-    <a href="https://github.com/MarcusMcKenzie" class="github">
-      <i class="fa fa-github"></i>
-      <span class=>Github</span>
-
-  </div>
-
-  <div class="thumb-container">
+<contact>
 
     
+  <div class="contact-title">
 
-    <a href=https://github.com/MarcusMcKenzie/drone_cv class="thumb-unit" style="background-image: url(/assets/img/projects/drone/thumb.jpg);">
+    <h1>Contact</h1>
+    <h2>Get in Touch</h2>
       
-      <div class="thumb-overlay" >
+  </div>
 
-        <strong>Quadrocopter</strong>
-       
-        <p>Multi-Object Tracking w/ Drone</p>
 
-        <div class="zoom-icon"></div>
+  <div class="contact-form">
 
-      </div>
+    <form id="contact-form" method="post" action="https://formspree.io/marcustmckenzie@gmail.com">
 
-    </a> 
+      <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+      <br>
+      <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+      <br>
 
-    
+        <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+        <br>
 
-    <a href=https://github.com/MarcusMcKenzie/intersection_decision_making class="thumb-unit" style="background-image: url(/assets/img/projects/car/thumb.jpg);">
-      
-      <div class="thumb-overlay" >
+        <input type="submit" class="form-control submit" value="SEND MESSAGE">
 
-        <strong>Self-Driving Car</strong>
-       
-        <p>Intersection Decision-Making</p>
-
-        <div class="zoom-icon"></div>
-
-      </div>
-
-    </a> 
-
-    
-
-    <a href=https://github.com/MarcusMcKenzie/RIVeR-Lab class="thumb-unit" style="background-image: url(/assets/img/projects/hsr/thumb.jpg);">
-      
-      <div class="thumb-overlay" >
-
-        <strong>HSR</strong>
-       
-        <p>Human Support Robot</p>
-
-        <div class="zoom-icon"></div>
-
-      </div>
-
-    </a> 
-
-    
+    </form>
 
   </div>
 
-</section>
-
-<experience>
-
-  <div class="wrapper">
-
-    <h2 id="experience">Recent Experience</h2>
-
-    <body>
-
-      <div class="timeline">
-        
-        <ul>
-
-            <li>
-              <div class="content">
-                <h4>01/2020 - 5/2020</h4>
-                <h2>Robotics & Intelligent <br> Vehicles Research Lab</h2>
-                <h3>Research Assistant</h3>
-                <p>jefnelfelafelkfmselfmelfmeklfmeklfmlkemfl <br> emfeklfmelkfaelfawejlfn</p>
-              </div>
-
-            </li>
-
-            <li>
-              <div class="content">
-                  <h4>01/2020 - 5/2020</h4>
-                  <h2>iRobot Corporation</h2>
-                  <h3>Electrical Engineer Intern</h3>
-                  <p>jefnelfelafelkfmselfmelfmeklfmeklfmlkemf <br> lemfeklfmelkfaelfawejlfn</p>
-              </div>
-
-
-            </li>
-
-            <li>
-              <div class="content">
-                <h4>01/2020 - 5/2020</h4>
-                <h2>Insulet Corporation</h2>
-                <h3>Robotics & Automation Engineer Intern</h3>
-                <p>jefnelfelafelkfmselfmelfmeklfmeklfmlkemf <br> lemfeklfmelkfaelfawejlfn</p>
-              </div>
-
-            </li>
-
-            <li>
-              <div class="content">
-                <h4>01/2020 - 5/2020</h4>
-                <h2>Jacobs Engineering Group</h2>
-                <h3>Electrical Engineer Intern</h3>
-                <p>jefnelfelafelkfmselfmelfmeklfmeklfmlkemf <br> lemfeklfmelkfaelfawejlfn</p>
-              </div>
-
-            </li>
-
-            <div style="clear: both"></div>
-
-        </ul>
-
-
-      </div>
-
-    </body>
-
-  </div>
-
-</experience>
 
 <footer>
 
@@ -293,10 +163,13 @@
 
 </footer>
 
+ 
 
 
 <script src="/assets/js/jquery-2.1.1.min.js"></script>
-<script src="/assets/js/functions.js" type="text/javascript"></script>
+<script src="/assets/js/function2.js" type="text/javascript"></script>
 
-</body>
+
+</contact>
 </html>
+

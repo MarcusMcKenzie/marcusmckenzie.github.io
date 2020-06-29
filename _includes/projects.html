@@ -2,13 +2,20 @@
 
   <h2 id="projects">Projects</h2>
 
-  <h3> Latest Work. More Projects >></h3>
+  <h3>Checkout my latest endeavors on Github!</h3>
+
+  <div class="link">
+    <a href="{{ site.data.settings.git_link }}" class="github">
+      <i class="fa fa-github"></i>
+      <span class=>Github</span>
+
+  </div>
 
   <div class="thumb-container">
 
     {% for project in site.data.settings.projects %}
 
-    <a href="" class="thumb-unit" style="background-image: url(/assets/img/projects/{{project.folder}}/thumb.jpg);">
+    <a href={{project.link}} class="thumb-unit" style="background-image: url(/assets/img/projects/{{project.folder}}/thumb.jpg);">
       
       <div class="thumb-overlay" >
 

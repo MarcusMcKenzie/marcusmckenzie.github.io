@@ -1,0 +1,59 @@
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type ="text/javascript">
+
+    $(window).on('scroll', function(){
+
+        if($(window).scrollTop()){
+
+            $('nav').addClass('black');
+
+        }
+
+        else{
+
+            $('nav').removeClass('black');
+        }
+    })
+
+</script>
+
+
+
+<nav>
+
+
+    
+    <a class="home" href="#top">
+        <div class="logo">{% include icons/logo.html %}</div> 
+    </a>
+
+
+
+
+    <ul class="nav-links">
+    
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+
+    <div class= "burger">
+
+        <div class= "line1"></div>
+        <div class= "line2"></div>
+        <div class= "line3"></div>
+
+    </div>
+
+
+
+</nav> 
+
+
+<script src="app.js"></script>
+
+
+

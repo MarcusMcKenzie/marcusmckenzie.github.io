@@ -1,42 +1,19 @@
+nav
 
-
-header
-  
-
-  height: 100%
-  width: 100%
-  margin: 0
-  padding-bottom: 80px
-
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/nunews.jpg) center center 
-
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
-  
-  
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
-
-    
-  nav
-
-      
+    position: fixed
     top: 0
     left: 0
     width: 100%
     height: 100px
     padding: 10px 10px 
-
+    box-sizing: border-box
     transition: .5s
-    z-index: 1
+    z-index: 99
       
 
     .logo
         +size(35px)
-        background: white
+        background: #FFF
         float: left
         
         margin: 20px 20px 0px 100px
@@ -56,7 +33,7 @@ header
         
         float: right
         margin: 0
-        padding: 0px 50px
+        padding: 0
         display: flex
         
 
@@ -65,7 +42,7 @@ header
             @extend %small-bold
             transition: .5s
             color: white
-            padding: 20px 20px
+            padding: 20px 30px
             text-decoration: none
             text-transform: uppercase
             transition: .5s
@@ -102,7 +79,6 @@ header
             
 
         .nav-links
-            padding: 0
             position: absolute
             right: 0px
             bottom: 0px
@@ -132,7 +108,6 @@ header
 
 
     .nav-active
-
         transform: translateY(0%)
 
     @keyframes navLinkFade
@@ -152,68 +127,44 @@ header
 
     .toggle .line3
         transform: rotate(45deg) translate(-5px, -6px)
+        
 
-    nav.black
+    
 
-      background: rgba(0, 0, 0, 1)
-      height: 60px
-      padding: 10px 50px
-      border-bottom: 1px solid $accent
+nav.black
 
-      ul li a
+    background: rgba(0, 0, 0, 1)
+    height: 60px
+    padding: 10px 50px
+    border-bottom: 1px solid $accent
 
-          color: #FFF
-          line-height: 40px
+    ul li a
 
-
-      .logo 
-
-          margin: 3px 30px 0 150px
-
-      .burger
-          padding: 5px 30px 0 0px
-          transition: .5s
+        color: #FFF
+        line-height: 40px
 
 
+    .logo 
 
-      @media screen and (max-width: 1024px)
+        margin: 3px 30px 0 150px
 
-          .nav-links
-              padding: 0
-              height: 230%
-              border-bottom: 1px solid $accent
-              
+    .burger
+        padding: 5px 30px 0 0px
+        transition: .5s
 
-          ul li a
-              color: #FFF
-              line-height: 0px
+
+
+    @media screen and (max-width: 1024px)
+
+        .nav-links
+            height: 230%
+            border-bottom: 1px solid $accent
+            
+
+        ul li a
+            color: #FFF
+            line-height: 0px
 
         
 
-  h1
-    
-    text-align: center
-    font:
-      size: 80px
-      weight: 700
-    color: white
-    text-transform: uppercase
-    letter-spacing: 0.05em
-    margin-top: 0
-    margin-bottom: 20px
-    clear: both
-    padding-top: 100px
-
-    span
-      display: inline-block
-      padding: 0.2em 0.5em
-      border: white solid 10px
-     
-  .kicker
-    @extend %small-bold
-    text-align: center
-    text-transform: uppercase    
-    letter-spacing: 0.05em
-    color: white
-    line-height: 1
 

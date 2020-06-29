@@ -1,7 +1,16 @@
 footer
   
+  background: black
+  background-size: cover
+  position: relative
+  padding: 50px 0px 0 0
+
+  width: 100%
+  text-align: center
+  
+
   .social-links
-    max-width: 120px
+    max-width: 150px
     margin: 0px auto 10px
     padding-top: 10px
     +display(flex)
@@ -9,6 +18,7 @@ footer
 
     a
       display: block
+
       background: $accent
       +size(35px)
       text-align: center
@@ -19,17 +29,25 @@ footer
 
       &:hover
         +transform(scale(1.2))
+        transition: all .3s ease-in-out
   
     
-  background: #fff
-  background-size: cover
-  
+
   p
     
-    color: black
+    color: white
     font:
-      size: 10px
+      size: 12px
+    padding: 20px 0px 40px 0
     text-align: center
     text-transform: none
 
+    .privacy
+      font-size: 12px
+      color: $accent
+      transition: all .3s ease-in-out
+
+      &:hover
+        color: #331799
+        transition: all .3s ease-in-out
     
