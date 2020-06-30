@@ -1,5 +1,14 @@
 ---
 ---
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170366451-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170366451-1');
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +23,7 @@
 
 </head>
 
-{% include contact_nav.html %}
+{% include nav.html %}
 
 <privacy id= privacy>
 
@@ -35,13 +44,16 @@
       <span class=>Opt-Out of Tracking</span>
 
   </div>
+  
+
+
 
 <script src="/assets/js/jquery-2.1.1.min.js"></script>
-<script src="/assets/js/function2.js" type="text/javascript"></script>
+<script src="/assets/js/functions.js" type="text/javascript"></script>
 
 
 
 
 </privacy>
 
-<script src="app.js"></script>
+<script src="/assets/js/app.js"></script>

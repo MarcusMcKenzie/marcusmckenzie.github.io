@@ -1,219 +1,290 @@
 
 
+
 header
   
 
-  height: 100%
-  width: 100%
-  margin: 0
-  padding-bottom: 80px
+    height: 100%
+    width: 100%
+    margin: 0
+    padding-bottom: 80px
 
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/nunews.jpg) center center 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/nunews.jpg) center center 
 
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
-  
-  
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
 
     
-  nav
-
-      
-    top: 0
-    left: 0
-    width: 100%
-    height: 100px
-    padding: 10px 10px 
-
-    transition: .5s
-    z-index: 1
-      
-
-    .logo
-        +size(35px)
-        background: white
-        float: left
+    nav
+        font-family: sans-serif
         
-        margin: 20px 20px 0px 100px
+        top: 0
+        left: 0
+        width: 100%
+        height: 100px
+        padding: 10px 10px 
+
         transition: .5s
-  
-        path
-            fill: rgba(0,0,0,0.7)
+        z-index: 1
+      
 
-
-        &:hover
-            background: $accent 
-        
- 
-
-
-    .nav-links
-        
-        float: right
-        margin: 0
-        padding: 0px 50px
-        display: flex
-        
-
-        a
-            line-height: 80px
-            @extend %small-bold
-            transition: .5s
-            color: white
-            padding: 20px 20px
-            text-decoration: none
-            text-transform: uppercase
-            transition: .5s
+        .logo
+            +size(35px)
+            background: white
+            float: left
             
+            margin: 20px 20px 0px 100px
+            transition: .5s
+    
+            path
+                fill: rgba(0,0,0,0.7)
+
 
             &:hover
-                color: $accent 
-
-        li
-            list-style: none
-
-    .burger
-        display: none
-        cursor: pointer
-
-
-        div
-            width: 25px
-            height: 3px
-            background-color: white
-            margin: 5px
-            transition: all .3s ease
-
-            &:hover 
-                background-color: $accent    
-
-
-
-
-
-    @media screen and (max-width: 1024px)
-        nav 
-            overflow-y: hidden
+                background: $accent 
             
+    
+
 
         .nav-links
-            padding: 0
-            position: absolute
-            right: 0px
-            bottom: 0px
-            height: 25vh
-            top: 0vh
-            background-color: black
+            
+            float: right
+            margin: 0
+            padding: 0px 50px
             display: flex
-            flex-direction: column
-            align-items: center
-            width: 100%
-            transform: translateY(-100%)
-            transition: transform .5s ease-in
             
 
             a
-                line-height: 0px
+                line-height: 80px
+                @extend %small-bold
+                transition: .5s
+                color: white
+                padding: 20px 20px
+                text-decoration: none
+                text-transform: uppercase
+                transition: .5s
+                
 
-            li 
-                opacity: 0
+                &:hover
+                    color: $accent 
 
+            li
+                list-style: none
 
         .burger
-            float: right
-            padding: 20px 30px 0 0px
-            display: block
-            transition: .5s
+            display: none
+            cursor: pointer
 
 
-    .nav-active
+            div
+                width: 25px
+                height: 3px
+                background-color: white
+                margin: 5px
+                transition: all .3s ease
 
-        transform: translateY(0%)
+            &:hover 
+            
+                .line1
+                    background-color: $accent 
+                    transition: all .3s ease 
 
-    @keyframes navLinkFade
-        from
+                .line2
+                    background-color: $accent  
+                    transition: all .5s ease
+
+                .line3
+                    background-color: $accent   
+                    transition: all .7s ease     
+
+
+
+
+
+        @media screen and (max-width: 1024px)
+            nav 
+                overflow-y: hidden
+                
+
+            .nav-links
+                padding: 0
+                position: absolute
+                right: 0px
+                bottom: 0px
+                height: 135%
+                top: 0vh
+                background-color: black
+                border-bottom: 1px solid $accent
+                
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 100%
+                transform: translateY(-100%)
+                transition: transform .5s ease-in
+                
+
+                a
+                    line-height: 0px
+
+                li 
+                    opacity: 0
+
+
+            .burger
+                float: right
+                padding: 20px 30px 0 0px
+                display: block
+                transition: .5s
+
+
+        .nav-active
+
+            transform: translateY(0%)
+
+        @keyframes navLinkFade
+            from
+                opacity: 0
+                transform: translateY(0px)
+            to
+                opacity: 1
+                transform: translateY(15px)
+
+        .toggle .line1
+            transform: rotate(-45deg) translate(-5px,6px)
+            
+        
+        .toggle .line2
             opacity: 0
-            transform: translateY(0px)
-        to
-            opacity: 1
-            transform: translateY(15px)
 
-    .toggle .line1
-        transform: rotate(-45deg) translate(-5px,6px)
-        
-    
-    .toggle .line2
-        opacity: 0
+        .toggle .line3
+            transform: rotate(45deg) translate(-5px, -6px)
 
-    .toggle .line3
-        transform: rotate(45deg) translate(-5px, -6px)
+        nav.black
 
-    nav.black
+            background: rgba(0, 0, 0, 1)
+            height: 60px
+            padding: 10px 50px
+            border-bottom: 1px solid 
 
-      background: rgba(0, 0, 0, 1)
-      height: 60px
-      padding: 10px 50px
-      border-bottom: 1px solid $accent
+            ul li a
 
-      ul li a
-
-          color: #FFF
-          line-height: 40px
+                color: black
+                line-height: 40px
 
 
-      .logo 
+            .logo 
 
-          margin: 3px 30px 0 150px
+                margin: 3px 30px 0 150px
+                
 
-      .burger
-          padding: 5px 30px 0 0px
-          transition: .5s
+            .burger
+                padding: 5px 30px 0 0px
+                transition: .5s
 
 
 
-      @media screen and (max-width: 1024px)
+            @media screen and (max-width: 1024px)
 
-          .nav-links
-              padding: 0
-              height: 230%
-              border-bottom: 1px solid $accent
-              
+                .nav-links
+                    padding: 0
+                    height: 230%
+                    border-bottom: 1px solid white
+                    
 
-          ul li a
-              color: #FFF
-              line-height: 0px
+                ul li a
+                    color: black
+                    line-height: 0px
 
         
 
-  h1
+
+    h1
+        
+        text-align: center 
+
+  
+        font:
+            family: 'Rubik', sans-serif
+            size: 100px
+            weight: 500
+        color: white
+        text-transform: uppercase
+        letter-spacing: 0.05em
+        line-height: 120px
+        line-spacing: 10px
+        margin-top: 0
+        margin-bottom: 20px
+        clear: both
+        padding-top: 200px
+        padding-bottom: 20px
+
+        @media screen and (max-width: 760px)
+
+            font:
+                size: 50px
+            line-height: 62px
+
+            padding-top: 150px
+            padding-bottom: 10px
+
+            
+
+        span
+            display: inline-block
+            padding: 0.2em 0.5em
+            border: white solid 10px
+        
+        .kicker
+            
+            font:
+                size: 100px
+                weight: normal
+            text-align: center
+            text-transform: uppercase    
+            letter-spacing: 0.05em
+            color: white
+            line-height: 5
+
+
+.arrow
     
+    max-width: 150px
+    margin: 0px auto 10px
+    padding-top: 50px
     text-align: center
-    font:
-      size: 80px
-      weight: 700
-    color: white
-    text-transform: uppercase
-    letter-spacing: 0.05em
-    margin-top: 0
-    margin-bottom: 20px
-    clear: both
-    padding-top: 100px
+    +display(flex)
+    +justify-content(space-around)
 
-    span
-      display: inline-block
-      padding: 0.2em 0.5em
-      border: white solid 10px
+
+    .button
+        display: in-line block
+        border: 2px solid white
+        background-color: black
+        
+        +size(30px)
+        text-align: center
+        line-height: 100px !important
+        border-radius: 50%
+
+        text-align: center
+        font-size: 30px
+        color: white
+        transition: all .3s ease-in-out
      
-  .kicker
-    @extend %small-bold
-    text-align: center
-    text-transform: uppercase    
-    letter-spacing: 0.05em
-    color: white
-    line-height: 1
+     
+        &:hover 
+            color: $accent
+            background-color: transparent
+            border: 2px solid white
+            cursor: pointer
+            -webkit-transition: all 1s ease
+
 

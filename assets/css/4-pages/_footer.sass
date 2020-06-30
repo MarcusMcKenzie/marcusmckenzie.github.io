@@ -1,13 +1,7 @@
 footer
-  
-  background: black
-  background-size: cover
-  position: relative
+
   padding: 50px 0px 0 0
 
-  width: 100%
-  text-align: center
-  
 
   .social-links
     max-width: 150px
@@ -18,11 +12,12 @@ footer
 
     a
       display: block
-
+      border: 3px solid $accent
       background: $accent
       +size(35px)
       text-align: center
-      line-height: 35px
+      line-height: 0px
+     
       color: white
       border-radius: 50%
       font-size: 20px
@@ -37,13 +32,14 @@ footer
     
     color: white
     font:
-      size: 12px
+      size: 14px
+      weight: 400
     padding: 20px 0px 40px 0
     text-align: center
     text-transform: none
 
     .privacy
-      font-size: 12px
+      font-size: 14px
       color: $accent
       transition: all .3s ease-in-out
 
