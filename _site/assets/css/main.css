@@ -350,10 +350,10 @@ header {
   width: 100%;
   margin: 0;
   padding-bottom: 80px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/nunews.jpg) center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/nunews.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -510,47 +510,6 @@ header {
       color: white;
       line-height: 5; }
 
-.arrow {
-  max-width: 150px;
-  margin: 0px auto 10px;
-  padding-top: 50px;
-  text-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  -ms-justify-content: space-around;
-  -o-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-pack: center; }
-  .arrow .button {
-    display: in-line block;
-    border: 2px solid white;
-    background-color: black;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 100px !important;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    transition: all 0.3s ease-in-out; }
-    .arrow .button:hover {
-      color: #5612b0;
-      background-color: transparent;
-      border: 2px solid white;
-      cursor: pointer;
-      -webkit-transition: all 1s ease; }
-
 footer {
   padding: 50px 0px 0 0; }
   footer .social-links {
@@ -607,11 +566,16 @@ footer {
         transition: all 0.3s ease-in-out; }
 
 section {
-  padding-bottom: 50px; }
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bat_robot.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-bottom: 80px; }
 
 h2 {
   text-transform: uppercase;
-  padding-top: 100px;
+  padding-top: 150px;
   color: white;
   text-align: center; }
 
@@ -629,44 +593,46 @@ p {
   margin: 50px auto 50px;
   font-size: 24px; }
 
-projects {
-  padding-bottom: 80px; }
-  projects h2 {
-    padding-top: 100px;
+project {
+  padding-bottom: 80px;
+  display: block;
+  background: gray; }
+  project h2 {
+    padding-top: 150px;
     text-align: center;
     color: white;
     text-transform: uppercase; }
-  projects h3 {
+  project h3 {
     text-align: center;
     font-size: 24px;
     color: white;
     padding: 80px 0 10px 0; }
-  projects .link {
+  project .link {
     text-align: center;
     padding: 10px 0 50px 0; }
-    projects .link .github {
+    project .link .github {
       display: in-line block;
       border: 3px solid #5612b0;
       padding: 10px 10px 10px 10px;
       font-size: 25px;
       color: #5612b0;
       transition: all 0.5s ease-in-out; }
-      projects .link .github span {
+      project .link .github span {
         font-size: 25px; }
-      projects .link .github:hover {
+      project .link .github:hover {
         color: black;
         background-color: #5612b0;
         cursor: pointer;
         transition: all 0.5s ease-in-out; }
-  projects .thumb-container {
+  project .thumb-container {
     max-width: 1480;
     margin: 0px auto;
     padding: 50px 0 100px 0; }
-    projects .thumb-container:after {
+    project .thumb-container:after {
       content: "";
       display: table;
       clear: both; }
-    projects .thumb-container .thumb-unit {
+    project .thumb-container .thumb-unit {
       display: block;
       width: 33%;
       float: left;
@@ -677,10 +643,10 @@ projects {
       background-repeat: no-repeat;
       background-size: cover; }
       @media screen and (max-width: 760px) {
-        projects .thumb-container .thumb-unit {
+        project .thumb-container .thumb-unit {
           width: 33%;
           padding-top: 20%; } }
-      projects .thumb-container .thumb-unit .thumb-overlay {
+      project .thumb-container .thumb-unit .thumb-overlay {
         position: absolute;
         top: 100%;
         right: 0px;
@@ -691,7 +657,7 @@ projects {
         -webkit-transition: 500ms;
         -moz-transition: 500ms;
         transition: 500ms; }
-        projects .thumb-container .thumb-unit .thumb-overlay strong {
+        project .thumb-container .thumb-unit .thumb-overlay strong {
           display: block;
           padding: 20px 20px;
           color: white;
@@ -700,69 +666,62 @@ projects {
           font-size: 20px;
           line-height: 2.5;
           text-align: center; }
-        projects .thumb-container .thumb-unit .thumb-overlay p {
+        project .thumb-container .thumb-unit .thumb-overlay p {
           padding: 0px 20px;
           color: white;
           font-weight: 500;
           font-size: 12px;
           line-height: 0;
           text-align: center; }
-      projects .thumb-container .thumb-unit:hover .thumb-overlay {
+      project .thumb-container .thumb-unit:hover .thumb-overlay {
         position: absolute;
         top: 0%;
         right: 0px;
         left: 0px; }
 
-contact {
-  padding-bottom: 160px; }
-  contact .contact-title {
-    margin-top: 50px;
+contact .contact-title {
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out; }
+  contact .contact-title h1 {
+    font-size: 32px;
+    color: #5612b0;
+    margin-bottom: 20px;
+    clear: both;
+    padding-top: 120px; }
+  contact .contact-title h2 {
+    font-size: 16px; }
+contact form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+  text-align: center; }
+  contact form .form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
     color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all 4s ease-in-out; }
-    contact .contact-title h1 {
-      font-size: 32px;
-      line-height: 100px;
-      color: #5612b0;
-      margin-bottom: 20px;
-      clear: both;
-      padding-top: 100px; }
-      contact .contact-title h1 span {
-        display: inline-block;
-        padding: 0.2em 0.5em;
-        border: white solid 10px; }
-    contact .contact-title h2 {
-      font-size: 16px; }
-  contact form {
-    margin-top: 50px;
-    transition: all 4s ease-in-out;
-    text-align: center; }
-    contact form .form-control {
-      width: 600px;
-      background: transparent;
-      border: none;
-      outline: none;
-      border-bottom: 1px solid gray;
-      color: #fff;
-      font-size: 18px;
-      margin-bottom: 16px; }
-    contact form input {
-      height: 45px; }
-    contact form .submit {
-      background: #5612b0;
-      border-color: transparent;
-      color: #fff;
-      font-size: 20px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      height: 50px;
-      margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 16px; }
+  contact form input {
+    height: 45px; }
+  contact form .submit {
+    background: #5612b0;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out; }
+    contact form .submit:hover {
+      background-color: #331799;
+      cursor: pointer;
       transition: all 0.3s ease-in-out; }
-      contact form .submit:hover {
-        background-color: #331799;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out; }
 
 nav {
   position: fixed;
@@ -883,28 +842,28 @@ nav.black {
       line-height: 0px; } }
 
 skills {
-  background-color: #030309; }
+  display: block;
+  background-color: black; }
   skills h2 {
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 50px; }
-
-.content {
-  margin: auto;
-  text-align: center; }
-  .content #c {
-    margin: auto; }
-  .content .header {
-    text-align: center;
-    width: 100%;
+  skills .content {
     margin: auto;
-    height: 25px; }
-  .content .pentagon {
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    padding: 3px 30px 28px 30px;
-    display: inline-block;
-    padding-bottom: 50px; }
+    text-align: center; }
+    skills .content #c {
+      margin: auto; }
+    skills .content .header {
+      text-align: center;
+      width: 100%;
+      margin: auto;
+      height: 25px; }
+    skills .content .pentagon {
+      width: 300px;
+      height: 300px;
+      margin: auto;
+      padding: 3px 30px 28px 30px;
+      display: inline-block;
+      padding-bottom: 50px; }
 
 experience {
   display: table;
@@ -916,7 +875,7 @@ experience {
   background-repeat: no-repeat;
   text-align: center;
   margin: auto;
-  padding: 0; }
+  padding-top: 100px; }
 
 body {
   margin: 0px;
@@ -954,7 +913,7 @@ body {
   text-align: right;
   clear: both;
   padding-right: 100px; }
-  .timeline ul li:nth-child(odd) .content {
+  .timeline ul li:nth-child(odd) .description {
     text-align: right; }
   .timeline ul li:nth-child(odd) h2 {
     text-align: right; }
@@ -966,14 +925,14 @@ body {
   text-align: left;
   clear: both;
   padding-left: 100px; }
-  .timeline ul li:nth-child(even) .content {
+  .timeline ul li:nth-child(even) .description {
     text-align: left; }
   .timeline ul li:nth-child(even) h2 {
     text-align: left; }
   .timeline ul li:nth-child(even) p {
     text-align: left; }
 
-.content {
+.description {
   padding-top: 10px;
   padding-bottom: 50px; }
 
@@ -1019,7 +978,7 @@ body {
 .timeline ul li h3 {
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   font-size: 14px;
   font-weight: 500;
   color: white; }
@@ -1027,7 +986,7 @@ body {
 .timeline ul li p {
   margin: 0;
   padding: 0;
-  line-height: 35px;
+  line-height: 30px;
   font-size: 12px;
   font-weight: 300;
   color: aliceblue; }
