@@ -27,6 +27,32 @@ nav
             background: $accent 
         
  
+    .nav-links_wide
+        
+        float: right
+        margin: 0
+        padding: 0px 0px
+        display: flex
+        
+
+        a
+            line-height: 80px
+            @extend %small-bold
+            transition: .5s
+            color: white
+            padding: 20px 30px
+            text-decoration: none
+            text-transform: uppercase
+            transition: .5s
+            
+
+            &:hover
+                color: $accent 
+                transition: all .5s ease
+
+        li
+            list-style: none
+
 
 
     .nav-links
@@ -34,7 +60,7 @@ nav
         float: right
         margin: 0
         padding: 0px 0px
-        display: flex
+        display: none
         
 
         a
@@ -87,13 +113,16 @@ nav
     @media screen and (max-width: 1024px)
         nav 
             overflow-y: hidden
+        
+        .nav-links_wide
+            display: none
             
 
         .nav-links
-            position: absolute
+            position: fixed
             right: 0px
             bottom: 0px
-            height: 25vh
+            height: 135px
             top: 0vh
             background-color: black
             display: flex
@@ -168,8 +197,9 @@ nav.black
     @media screen and (max-width: 1024px)
 
         .nav-links
-            height: 230%
+            height: 135px
             border-bottom: 1px solid $accent
+            transition: .5s
             
 
         ul li a

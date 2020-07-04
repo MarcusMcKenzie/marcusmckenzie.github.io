@@ -8,6 +8,7 @@ const navSlide = () => {
     burger.addEventListener('click', () => {
 
         nav.classList.toggle('nav-active');
+        nav.classList.add('transition');
  
         navLinks.forEach((link, index) => {
 
@@ -34,6 +35,7 @@ const navSlide = () => {
     nav.addEventListener('click', () => {
 
         nav.classList.toggle('nav-active');
+        
 
         navLinks.forEach((link, index) => {
 
@@ -48,24 +50,33 @@ const navSlide = () => {
 
 
 
-    //window.attachEvent('onresize', () => {
-    /*window.addEventListener("resize", () => {
+
+
+    window.addEventListener("resize", () => {
+        
         const width = window.innerWidth|| document.documentElement.clientWidth 
-        if (width > 100){
+        
+        if (width > 1024){
             
-            
-            console.log("width > 1024")
+            console.log();
+            console.log("RESIZE");
+            console.log("width > 1024");
+
+            console.log(nav.classList)
             
             //nav.classList.toggle('nav-active');
  
-            //nav.classList.remove('nav-active');
+            nav.classList.remove('transition');
+            
             console.log(width);
+
+            console.log(nav.classList)
             
         }
 
-        console.log("RESIZE");
         
-    });*/
+        
+    }, false);
 
 }
 
