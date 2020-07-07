@@ -47,7 +47,7 @@ footer-links:
 projects: 
 - {name: Quadrocopter, folder: 'drone', description: Multi-Object Tracking & Following, link: 'https://github.com/MarcusMcKenzie/drone_cv'}
 - {name: Self-Driving Car, folder: 'car', description: Intersection Decision-Making, link: 'https://github.com/MarcusMcKenzie/intersection_decision_making'}
-- {name: HSR, folder: 'hsr', description: Human Support Robot, link: 'https://github.com/MarcusMcKenzie/RIVeR-Lab'}
+- {name: Human Support Robot, folder: 'hsr', description: Autonomously Cleaning Up Rooms, link: 'https://github.com/MarcusMcKenzie/RIVeR-Lab'}
 
 social:
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/marcus-mckenzie-/'}

@@ -581,6 +581,13 @@ footer {
       footer p .privacy:hover {
         color: #331799;
         transition: all 0.3s ease-in-out; }
+    footer p .photo-credit {
+      font-size: 14px;
+      color: #5612b0;
+      transition: all 0.3s ease-in-out; }
+      footer p .photo-credit:hover {
+        color: #331799;
+        transition: all 0.3s ease-in-out; }
 
 section {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/bat_robot.jpg);
