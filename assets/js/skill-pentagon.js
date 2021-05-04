@@ -26,7 +26,7 @@ var skills = [
     "values" : [
       0.75,
       0.85,
-      0.85,
+      0.75,
       0.95,
       0.60
     ]
@@ -34,16 +34,16 @@ var skills = [
   {"header" : "Tools",
     "captions" : [
       "Git",
-      "Numpy",
+      "NumPy",
       "OpenCV",
-      "TensorFlow",
+      "PyTorch",
       "ROS"
     ],
     "values" : [
       0.85,
       0.85,
       0.95,
-      0.70,
+      0.75,
       0.80
     ]
   }
