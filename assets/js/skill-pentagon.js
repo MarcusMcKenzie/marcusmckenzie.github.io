@@ -33,7 +33,7 @@ var skills = [
   },
   {"header" : "Tools",
     "captions" : [
-      "Git",
+      "Jupyter",
       "NumPy",
       "OpenCV",
       "PyTorch",
