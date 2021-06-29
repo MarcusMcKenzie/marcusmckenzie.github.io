@@ -3,40 +3,40 @@ var skills = [
     "captions" : [
       "IMU",
       "Radar",
+      "Stereo",
       "Camera",
-      "LiDAR",
-      "Stereo"
+      "Lidar"
     ],
     "values" : [
       0.75,
       0.75,
+      0.75,
       0.95,
-      0.95,
-      0.75
+      0.95
     ]
   },
   {"header" : "LANGUAGES",
     "captions" : [
-      "R",
+      "Java",
       "MATLAB",
       "C++",
       "Python",
-      "Java"
+      "R"
     ],
     "values" : [
+      0.65,
       0.75,
-      0.80,
-      0.80,
+      0.85,
       0.95,
-      0.65
+      0.75
     ]
   },
   {"header" : "Tools",
     "captions" : [
-      "Jupyter",
+      "PyTorch",
       "NumPy",
       "OpenCV",
-      "PyTorch",
+      "Scikit-learn",
       "ROS"
     ],
     "values" : [
