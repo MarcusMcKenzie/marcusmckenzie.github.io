@@ -24,9 +24,9 @@ var skills = [
       "R"
     ],
     "values" : [
+      0.70,
       0.75,
       0.75,
-      0.85,
       0.90,
       0.75
     ]
@@ -37,13 +37,13 @@ var skills = [
       "NumPy",
       "OpenCV",
       "Scikit-learn",
-      "ROS"
+      "SQL"
     ],
     "values" : [
       0.85,
       0.85,
       0.95,
-      0.75,
+      0.90,
       0.85
     ]
   }
