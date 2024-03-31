@@ -1,18 +1,18 @@
 var skills = [
   {"header" : "Algorithms",
     "captions" : [
-      "Linear",
-      "Logistic",
-      "Random",
-      "Neural",
-      "Ensemble"
+      "IMU",
+      "Radar",
+      "Stereo",
+      "Camera",
+      "Lidar"
     ],
     "values" : [
-      0.90,
       0.85,
-      0.90,
-      0.80,
-      0.75
+      0.85,
+      0.75,
+      0.95,
+      0.85
     ]
   },
   {"header" : "Languages",
