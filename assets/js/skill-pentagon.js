@@ -1,11 +1,11 @@
 var skills = [
   {"header" : "Algorithms",
     "captions" : [
-      "Linear Regression",
-      "Logistic Regression",
-      "Random Forests",
-      "Neural Networks",
-      "Ensemble Learning"
+      "Linear",
+      "Logistic",
+      "Random",
+      "Neural",
+      "Ensemble"
     ],
     "values" : [
       0.90,
