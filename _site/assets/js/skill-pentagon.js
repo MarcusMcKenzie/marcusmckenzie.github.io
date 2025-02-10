@@ -100,7 +100,7 @@ $(".pentagon").each(function(index){
     xy = getXY(i+1, 0.3);
     ctx.lineTo(xy.x, xy.y);
     xy = getXY(i, 0.37);
-    console.log();
+    //console.log();
     ctx.fillText(skills[ pentagonIndex].captions[valueIndex],xy.x, xy.y +5);
     valueIndex++;
     ctx.closePath();
