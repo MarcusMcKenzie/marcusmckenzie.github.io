@@ -1,49 +1,49 @@
 var skills = [
-  {"header" : "Knowledge",
+  {"header" : "Sensors",
     "captions" : [
-      "Machine Learning",
-      "RAGs",
-      "Agentic AI",
-      "LLMs",
-      "Prompt Engineering"
+      "IMU",
+      "Radar",
+      "Stereo",
+      "Camera",
+      "Lidar"
     ],
     "values" : [
-      0.95,
+      0.85,
+      0.85,
       0.75,
       0.95,
-      0.75,
-      0.75
+      0.85
     ]
   },
-  {"header" : "Languages",
+  {"header" : "LANGUAGES",
     "captions" : [
-      "R",
+      "Java",
       "MATLAB",
       "C++",
       "Python",
-      "Java"
+      "R"
     ],
     "values" : [
       0.75,
-      0.85,
-      0.85,
-      0.95,
-      0.60
+      0.75,
+      0.90,
+      0.90,
+      0.75
     ]
   },
   {"header" : "Tools",
     "captions" : [
-      "Scikit-learn",
-      "MLFlow",
-      "Langchain",
       "PyTorch",
-      "OpenAI API"
+      "NumPy",
+      "OpenCV",
+      "Scikit-learn",
+      "ROS"
     ],
     "values" : [
       0.85,
-      0.75,
-      0.75,
       0.85,
+      0.95,
+      0.75,
       0.85
     ]
   }
@@ -91,7 +91,6 @@ $(".pentagon").each(function(index){
     // For each side, draw two segments: the side, and the radius
     ctx.beginPath();
     xy = getXY(i, 0.3);
-    console.log("0: ", xy)
     colorJitter = 25 + theta*i*2;
     color = "hsl("+hue[pentagonIndex]+",100%," + colorJitter + "%)";
     ctx.fillStyle = color;
@@ -99,10 +98,8 @@ $(".pentagon").each(function(index){
     ctx.moveTo(0.5*width, 0.5*height); //center
     ctx.lineTo(xy.x, xy.y);
     xy = getXY(i+1, 0.3);
-    console.log("1: ", xy)
     ctx.lineTo(xy.x, xy.y);
     xy = getXY(i, 0.37);
-    console.log("2: ", xy)
     console.log();
     ctx.fillText(skills[ pentagonIndex].captions[valueIndex],xy.x, xy.y +5);
     valueIndex++;
