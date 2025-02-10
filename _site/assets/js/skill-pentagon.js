@@ -1,21 +1,21 @@
 var skills = [
-  {"header" : "Sensors",
+  {"header" : "Knowledge",
     "captions" : [
-      "IMU",
-      "Radar",
-      "Camera",
-      "LiDAR",
-      "Stereo"
+      "Machine Learning",
+      "RAGs",
+      "Agentic AI",
+      "LLMs",
+      "Prompt Engineering"
     ],
     "values" : [
-      0.75,
+      0.95,
       0.75,
       0.95,
-      0.95,
+      0.75,
       0.75
     ]
   },
-  {"header" : "LANGUAGES",
+  {"header" : "Languages",
     "captions" : [
       "R",
       "MATLAB",
@@ -33,18 +33,18 @@ var skills = [
   },
   {"header" : "Tools",
     "captions" : [
-      "Git",
-      "Numpy",
-      "OpenCV",
-      "TensorFlow",
-      "ROS"
+      "Scikit-learn",
+      "MLFlow",
+      "Langchain",
+      "PyTorch",
+      "OpenAI API"
     ],
     "values" : [
       0.85,
+      0.75,
+      0.75,
       0.85,
-      0.95,
-      0.70,
-      0.80
+      0.85
     ]
   }
 ];
