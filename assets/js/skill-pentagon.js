@@ -1,50 +1,50 @@
 var skills = [
-  {"header" : "Algorithms",
+  {"header" : "Knowledge",
     "captions" : [
-      "Ensemble Learning",
-      "Regression",
-      "Random Forests",
-      "Neural Networks",
-      "K-means"
+      "Machine Learning",
+      "RAGs",
+      "Agentic AI",
+      "LLMs",
+      "Prompt Engineering"
     ],
     "values" : [
+      0.95,
       0.75,
-      0.90,
-      0.85,
-      0.85,
-      0.85
+      0.95,
+      0.75,
+      0.75
     ]
   },
   {"header" : "Languages",
     "captions" : [
-      "Java",
+      "R",
       "MATLAB",
       "C++",
       "Python",
-      "R"
+      "Java"
     ],
     "values" : [
-      0.70,
-      0.80,
       0.75,
-      0.90,
-      0.75
+      0.85,
+      0.85,
+      0.95,
+      0.60
     ]
   },
   {"header" : "Tools",
     "captions" : [
-      "PyTorch",
-      "Pandas",
-      "Docker",
       "Scikit-learn",
-      "SQL"
+      "MLFlow",
+      "Langchain",
+      "PyTorch",
+      "OpenAI API"
     ],
     "values" : [
-      0.80,
       0.85,
+      0.75,
+      0.75,
       0.85,
-      0.90,
-      0.75
+      0.85
     ]
   }
 ];
@@ -100,7 +100,7 @@ $(".pentagon").each(function(index){
     xy = getXY(i+1, 0.3);
     ctx.lineTo(xy.x, xy.y);
     xy = getXY(i, 0.37);
-    console.log();
+    //console.log();
     ctx.fillText(skills[ pentagonIndex].captions[valueIndex],xy.x, xy.y +5);
     valueIndex++;
     ctx.closePath();
