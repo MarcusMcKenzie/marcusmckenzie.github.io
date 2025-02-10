@@ -91,7 +91,7 @@ $(".pentagon").each(function(index){
     // For each side, draw two segments: the side, and the radius
     ctx.beginPath();
     xy = getXY(i, 0.3);
-    print("0: ", xy)
+    console.log("0: ", xy)
     colorJitter = 25 + theta*i*2;
     color = "hsl("+hue[pentagonIndex]+",100%," + colorJitter + "%)";
     ctx.fillStyle = color;
@@ -99,10 +99,10 @@ $(".pentagon").each(function(index){
     ctx.moveTo(0.5*width, 0.5*height); //center
     ctx.lineTo(xy.x, xy.y);
     xy = getXY(i+1, 0.3);
-    print("1: ", xy)
+    console.log("1: ", xy)
     ctx.lineTo(xy.x, xy.y);
     xy = getXY(i, 0.37);
-    print("2: ", xy)
+    console.log("2: ", xy)
     console.log();
     ctx.fillText(skills[ pentagonIndex].captions[valueIndex],xy.x, xy.y +5);
     valueIndex++;
