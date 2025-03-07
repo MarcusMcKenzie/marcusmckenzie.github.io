@@ -571,7 +571,7 @@ footer {
     color: white;
     font-size: 14px;
     font-weight: 400;
-    padding: 20px 0px 40px 0;
+    padding: 20px 0px 40px 0px;
     text-align: center;
     text-transform: none; }
     footer p .privacy {
@@ -891,35 +891,6 @@ nav.black {
     nav.black ul li a {
       color: #FFF;
       line-height: 0px; } }
-
-skills {
-  display: block;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/jetyak_background.jpg);
-  background: black;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding-bottom: 80px; }
-  skills h2 {
-    padding-top: 150px;
-    padding-bottom: 80px; }
-  skills .content {
-    margin: auto;
-    text-align: center; }
-    skills .content #c {
-      margin: auto; }
-    skills .content .header {
-      text-align: center;
-      width: 100%;
-      margin: auto;
-      height: 25px; }
-    skills .content .pentagon {
-      width: 300px;
-      height: 300px;
-      margin: auto;
-      padding: 3px 30px 28px 30px;
-      display: inline-block;
-      padding-bottom: 50px; }
 
 experience {
   display: table;
